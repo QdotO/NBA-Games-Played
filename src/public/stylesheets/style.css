@@ -1,33 +1,38 @@
 body {
-  padding: 100px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 2rem;
+  font: 1rem Roboto, Arial, sans-serif;
 }
 
-body .users-column {
-  display: inline-block;
-  margin-right: 2em;
-  vertical-align: top;
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-body .users-column .column-header {
-  padding-bottom: 5px;
-  font-weight: 700;
-  font-size: 1.2em;
+body input,
+#submit-btn {
+  width: 25vw;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
 }
 
-body .add-user-col input {
-  margin-bottom: 10px;
+#submit-btn {
+  background-color: rgba(5, 28, 45, 1);
+  color: white;
 }
 
-body .users-column .user-display-ele {
-  padding-bottom: 10px;
+.games-played {
+  font-size: 1.5rem;
 }
 
-body .users-column .user-display-ele button {
-  margin-top: 2px;
-  margin-bottom: 10px;
+.player-data {
+  display: flex;
 }
 
-body .users-column .user-display-ele .edit-view {
-  display: none;
+.label {
+  font-weight: 300;
 }

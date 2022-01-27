@@ -1,4 +1,5 @@
 import { IPlayer } from '@entities/Player';
+import { defaults } from '@shared/constants';
 
 declare module 'express' {
   export interface Request {
@@ -6,8 +7,8 @@ declare module 'express' {
       player: IPlayer;
     };
     query: {
-      firstName?: string;
-      lastName?: string;
+      firstName: string = defaults.firstName;
+      lastName: string = defaults.lastName;
     };
   }
 }
